@@ -1,0 +1,13 @@
+h1 { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.header {width: 100%;
+height: fit-content;
+background-color: aquamarine;}
+.headerbuttons {text-align: center;}
+body {background-color: beige;}
+p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+footer {width: 100%;
+text-align: center;
+height: fit-content;
+background-color: aquamarine;}

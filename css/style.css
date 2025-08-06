@@ -1,13 +1,83 @@
-h1 { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif; 
+    background-image: linear-gradient(to right, red, orange,  yellow, green, blue, indigo, violet)
 }
-.header {width: 100%;
-height: fit-content;
-background-color: aquamarine;}
-.headerbuttons {text-align: center;}
-body {background-color: beige;}
-p {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-footer {width: 100%;
-text-align: center;
-height: fit-content;
-background-color: aquamarine;}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-family: 'Monoton', cursive; 
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 3px;
+    color: #41b9ff;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 15px;
+    background-color: #41b9ff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content Sections */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.wide-banner {
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stacked {
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Two columns layout */
+.two-columns {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.column {
+    background-color: #e0e0e0;
+    padding: 15px;
+    flex: 1;
+    border-radius: 10px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+section 

@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    font-family: 'Orbitron', sans-serif; 
-    background-image: linear-gradient(to right, red, orange,  yellow, green, blue, indigo, violet)
+    font-family: 'Lato', sans-serif; 
+    font-size: 20px;
+    background-image: linear-gradient(to right, hsla(0, 100%, 50%, 0.66), rgba(255, 166, 0, 0.66),  rgba(255, 255, 0, 0.66), rgba(0, 128, 0, 0.66), rgba(0, 0, 255, 0.66), rgba(76, 0, 130, 0.66), hwb(300 51% 7% / 0.66));
 }
 
 header {
@@ -39,7 +40,7 @@ h1 {
     font-size: 18px;
 }
 
-/* Main Content Sections */
+
 main {
     width: 80%;
     margin: 20px auto;
@@ -58,20 +59,21 @@ main {
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
+    text-align: center;
 }
 
-/* Two columns layout */
+
 .two-columns {
     display: flex;
     gap: 20px;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .column {
     background-color: #e0e0e0;
     padding: 15px;
     flex: 1;
-    border-radius: 10px;
+    border-radius: 10px;  
 }
 footer {
     background-color: #222;
@@ -80,4 +82,34 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
-section 
+.interior-column-center{
+display: flex;
+flex-direction: column;
+ justify-content: center; 
+ align-items: center;  
+}
+.header 
+{font-size: 28px;
+font-weight: bold;
+text-align: center;
+}
+.subheader 
+{font-size: 22px;
+    font-style: italic;
+text-align: center;
+}
+.smallheader 
+{font-size: 22px;
+font-weight: bold;
+text-align: center;
+}
+h2 {text-align: center;
+}
+.staff-img {
+  width: 100%;             
+  max-width: 400px;              
+  object-fit: cover;        
+  display: block;          
+  border-radius: 10px;      
+  margin: auto;           
+}

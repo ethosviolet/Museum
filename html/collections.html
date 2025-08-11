@@ -15,16 +15,203 @@
     <h1>Collections</h1>
     <ul class="nav-menu">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="/html/collections.html">Collections</a></li>
-        <li><a href="/html/staff.html">Staff</a></li>
+        <li><a href="../html/collections.html">Collections</a></li>
+        <li><a href="../html/staff.html">Staff</a></li>
     </ul>
 </header>
 
-<nav class="secondary-nav" style="text-align:center; margin:20px 0;">
-    <button style="padding:10px 20px; margin:10px; font-size:18px; border-radius:10px; border:2px solid #000;">Archaeology</button>
-    <button style="padding:10px 20px; margin:10px; font-size:18px; border-radius:10px; border:2px solid #000;">Anthropology</button>
-    <button style="padding:10px 20px; margin:10px; font-size:18px; border-radius:10px; border:2px solid #000;">Histories</button>
+<nav class="secondary-nav" aria-label="Collections sub-navigation">
+  <button class="subnav-btn is-active"
+          onclick="showSection('archeology', this)"
+          aria-controls="archeology"
+          aria-pressed="true">Archaeology</button>
+
+  <button class="subnav-btn"
+          onclick="showSection('anthropology', this)"
+          aria-controls="anthropology"
+          aria-pressed="false">Anthropology</button>
+
+  <button class="subnav-btn"
+          onclick="window.location.href='/html/histories.html'">Histories</button>
 </nav>
+<!-- ===================== ARCHEOLOGY ===================== -->
+<section id="archeology" class="collection-section">
+  <h1 class="section-title">Archeology</h1>
+
+  <!-- Item 1: Prismatic Ledger Slab -->
+  <article class="artifact">
+    <figure class="artifact-media">
+      <img src="/images/collections/arch_prismatic_ledger_slab.png"
+           alt="Polished rectangular prismatic slab with shallow parallel grooves lying on terrace soil with bead fragments." loading="lazy">
+      <figcaption>Prismatic Ledger Slab</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Prismatic Ledger Slab</h2>
+      <dl>
+        <dt>Name</dt><dd>Prismatic Ledger Slab</dd>
+        <dt>Material</dt><dd>Translucent silicate crystal with embedded copper-alloy filaments</dd>
+        <dt>Size/Weight/Shape</dt><dd>62×28×6 cm; ~6.4 kg; rectangular plate</dd>
+        <dt>Physical Properties</dt><dd>Semi-translucent, laminar banding, narrow spectral refraction; parallel shallow grooves; planar polish</dd>
+        <dt>Estimated Age</dt><dd>~1,200–1,450 BP (contextual; charcoal assay pending)</dd>
+        <dt>Preservation State</dt><dd>Mostly complete; minor edge chipping</dd>
+        <dt>Location Found</dt><dd>ARK-7 “Prism Terrace” L4; 34.092N, −118.254W (fictional)</dd>
+        <dt>Likely Purpose</dt><dd>Information/display surface (ledger slab)</dd>
+        <dt>Evidence of Use</dt><dd>High polish inside grooves; micro-abrasion from sliding contact; faint mineralized organics</dd>
+        <dt>Manufacture Clues</dt><dd>Cut and ground from outcrop; V-section groove incisions; inlaid filaments sealed by polish</dd>
+        <dt>Found With</dt><dd>Glassy bead clusters; carbonized textile; copper-alloy pin</dd>
+        <dt>Burial or Habitat Context</dt><dd>Habitation terrace surface feature</dd>
+        <dt>Symbolism</dt><dd>Grooves in repeating triplet groups (motif noted)</dd>
+        <dt>Comparison</dt><dd>Similar to Wall Panel fragment ARK-2 but with denser filaments</dd>
+      </dl>
+    </div>
+  </article>
+
+  <!-- Item 2: Resonance Mirror (fragment) -->
+  <article class="artifact">
+    <figure class="artifact-media">
+      <img src="/images/collections/arch_resonance_mirror_fragment.png"
+           alt="Crescent-shaped iridescent mirror shard on compact earthen packing with a mineralized wooden frame piece nearby." loading="lazy">
+      <figcaption>Resonance Mirror (fragment, lower arc)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Resonance Mirror (fragment, lower arc)</h2>
+      <dl>
+        <dt>Name</dt><dd>Resonance Mirror (fragment, lower arc)</dd>
+        <dt>Material</dt><dd>Metallic glass veneer on ceramic composite backing; iridized oxide film</dd>
+        <dt>Size/Weight/Shape</dt><dd>Arc fragment ~19×12×0.9 cm; ~420 g; original Ø ~56 cm</dd>
+        <dt>Physical Properties</dt><dd>Highly reflective, iridescent; conchoidal fracture; organic adhesive traces on back</dd>
+        <dt>Estimated Age</dt><dd>~1,100–1,300 BP (thermoluminescence context)</dd>
+        <dt>Preservation State</dt><dd>Partial; surface micro-pitting</dd>
+        <dt>Location Found</dt><dd>Chamber C, “Low-Light Annex”; 34.089N, −118.258W (fictional)</dd>
+        <dt>Likely Purpose</dt><dd>Optical/display surface</dd>
+        <dt>Evidence of Use</dt><dd>Concentric micro-abrasion rings; edge wear from mounting; soot-free</dd>
+        <dt>Manufacture Clues</dt><dd>Deposited veneer; pressed fiber ceramic backing; plant resin adhesive; wheel-trim marks</dd>
+        <dt>Found With</dt><dd>Mineralized frame, four stone weights, folded inscribed ribbon</dd>
+        <dt>Burial or Habitat Context</dt><dd>Indoor alcove within subterranean vault</dd>
+        <dt>Symbolism</dt><dd>Rim notch motif (recorded)</dd>
+        <dt>Comparison</dt><dd>Parallels smaller hand-mirrors B-23; different backing composite</dd>
+      </dl>
+    </div>
+  </article>
+
+  <!-- Item 3: Seam-Spindle of the Spectral Loom -->
+  <article class="artifact">
+    <figure class="artifact-media">
+      <img src="/images/collections/arch_seam_spindle.png"
+           alt="Dark cylindrical spindle with thin metal inlays and mineralized fiber fragments on a woven mat." loading="lazy">
+      <figcaption>Seam-Spindle of the Spectral Loom</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Seam-Spindle of the Spectral Loom</h2>
+      <dl>
+        <dt>Name</dt><dd>Seam-Spindle of the Spectral Loom</dd>
+        <dt>Material</dt><dd>Darkstone core with silver-like alloy inlay; mineralized fiber twine</dd>
+        <dt>Size/Weight/Shape</dt><dd>27 cm × 2.6 cm; ~310 g; slightly tapered cylinder</dd>
+        <dt>Physical Properties</dt><dd>Matte dark core; polished inlay bands; end perforations; axial scoring</dd>
+        <dt>Estimated Age</dt><dd>~900–1,100 BP (sealed beam cavity)</dd>
+        <dt>Preservation State</dt><dd>Mostly complete; partial loss of outer wrapping</dd>
+        <dt>Location Found</dt><dd>ARK-3 “Weaver’s Niche”; 34.091N, −118.255W (fictional)</dd>
+        <dt>Likely Purpose</dt><dd>Textile spindle / loom accessory</dd>
+        <dt>Evidence of Use</dt><dd>Midline polish; rotational abrasion at ends; pigment flecks on sheathing</dd>
+        <dt>Manufacture Clues</dt><dd>Lathe-like turning; hammered inlay into channels; drilled perforations pre-inlay</dd>
+        <dt>Found With</dt><dd>Two loom weights, mineralized fiber bundles, small pigment pot</dd>
+        <dt>Burial or Habitat Context</dt><dd>Collapsed domestic workshop/loom room</dd>
+        <dt>Symbolism</dt><dd>Alternating thin/thick inlay stripes (noted)</dd>
+        <dt>Comparison</dt><dd>Similar to Spindle ARK-3a; rarer inlay on this example</dd>
+      </dl>
+    </div>
+  </article>
+</section>
+
+<!-- ===================== ANTHROPOLOGY ===================== -->
+<section id="anthropology" class="collection-section" style="display:none;">
+  <h1 class="section-title">Anthropology</h1>
+
+  <!-- Item 4: Partial Spectral Burial (B-12) -->
+  <article class="artifact">
+    <figure class="artifact-media">
+      <img src="/images/collections/anthro_partial_spectral_burial_b12.png"
+           alt="Partially exposed cranial vault with thoracic bone fragments, mineralized textile, and a small bead cluster." loading="lazy">
+      <figcaption>Partial Spectral Burial: Adult (B-12)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Partial Spectral Burial: Adult (Specimen B-12)</h2>
+      <dl>
+        <dt>Name</dt><dd>Partial Spectral Burial: Adult (B-12)</dd>
+        <dt>Material</dt><dd>Human osteological remains with mineralized textiles and crystalline residues</dd>
+        <dt>Size/Weight/Shape</dt><dd>Cranial vault, partial mandible, T1–T6 fragments, bilateral ribs; in-situ segment ~55 cm</dd>
+        <dt>Physical Properties</dt><dd>Tan/ivory bone with mineral staining; beads near cranium; crystalline powder within cranial cavity</dd>
+        <dt>Estimated Age</dt><dd>~1,250 ± 35 BP (radiocarbon on textile fibers)</dd>
+        <dt>Preservation State</dt><dd>Partial skeleton; cranial vault near-complete</dd>
+        <dt>Location Found</dt><dd>Burial Pit BP-12, “Dimming Grave”; 34.086N, −118.260W (fictional), −3.4 m depth</dd>
+        <dt>Likely Purpose</dt><dd>Funerary interment</dd>
+        <dt>Evidence of Use</dt><dd>Folded wrappings; bead placement in arc; powder concentrated intracranially</dd>
+        <dt>Manufacture Clues</dt><dd>Fine multi-ply textile; molded/extruded small beads; crushed mineral powder 0.2–0.7 mm</dd>
+        <dt>Found With</dt><dd>Ten glass beads, two metal pins, powder sachet, textile layers</dd>
+        <dt>Burial or Habitat Context</dt><dd>Sealed funerary shaft beneath ritual plaza; capstone closure</dd>
+        <dt>Symbolism</dt><dd>Bead arc across cranial vault; chevron weave on textile (observed)</dd>
+        <dt>Comparison</dt><dd>Comparable to Burial B-7; B-12 lacks leg elements</dd>
+      </dl>
+    </div>
+  </article>
+
+  <!-- Item 5: Infant Assemblage (I-3) -->
+  <article class="artifact">
+    <figure class="artifact-media">
+      <img src="/images/collections/anthro_infant_ossicle_tray_i3.png"
+           alt="Wooden tray holding infant bone fragments, shell disks, carved bone pendant, and folded pigment-stained textile." loading="lazy">
+      <figcaption>Infant Assemblage: Ossicle Tray + Adornments (I-3)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Infant Assemblage: Ossicle Tray + Adornments (Specimen I-3)</h2>
+      <dl>
+        <dt>Name</dt><dd>Infant Assemblage: Ossicle Tray + Adornments (I-3)</dd>
+        <dt>Material</dt><dd>Deciduous skeletal fragments; shell disks; carved bone pendant; pigment-stained textile</dd>
+        <dt>Size/Weight/Shape</dt><dd>Tray impression ~24×18 cm; shell disks Ø 1.2 cm; pendant 3.6×1.4 cm</dd>
+        <dt>Physical Properties</dt><dd>Fragile ossicles; polished shell; thin textile with red pigment traces</dd>
+        <dt>Estimated Age</dt><dd>~1,270 BP (organic residue on textile)</dd>
+        <dt>Preservation State</dt><dd>Assemblage intact; skeletal elements friable</dd>
+        <dt>Location Found</dt><dd>Nursery Niche, House Floor Context H-14; 34.093N, −118.253W (fictional)</dd>
+        <dt>Likely Purpose</dt><dd>Personal/burial/commemorative assemblage</dd>
+        <dt>Evidence of Use</dt><dd>Pendant edge wear; shell handling polish; outer textile soot</dd>
+        <dt>Manufacture Clues</dt><dd>Rotary-drilled shell; incised bone pendant; balanced warp threads</dd>
+        <dt>Found With</dt><dd>Ceramic cup fragment, charred seeds, pigment sachet</dd>
+        <dt>Burial or Habitat Context</dt><dd>Sub-floor cache in nursery area</dd>
+        <dt>Symbolism</dt><dd>Symmetrical pendant incisions; alternating light/dark weave</dd>
+        <dt>Comparison</dt><dd>Similar to H-7 infant cache; different pendant motif/colorant</dd>
+      </dl>
+    </div>
+  </article>
+
+  <!-- Item 6: Ceremonial Body Wrap Fragment (RW-2) -->
+  <article class="artifact">
+    <figure class="artifact-media">
+      <img src="/images/collections/anthro_ceremonial_wrap_rw2.png"
+           alt="Close-up of finely woven textile fragment with narrow iridescent pigment bands and flat metal-thread inlays." loading="lazy">
+      <figcaption>Ceremonial Body Wrap Fragment with Photoglyphic Bands (RW-2)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Ceremonial Body Wrap Fragment with Photoglyphic Bands (Specimen RW-2)</h2>
+      <dl>
+        <dt>Name</dt><dd>Ceremonial Body Wrap Fragment with Photoglyphic Bands (RW-2)</dd>
+        <dt>Material</dt><dd>Plant bast + fine animal hair fibers; photoreactive pigments; stitched metal-thread bands</dd>
+        <dt>Size/Weight/Shape</dt><dd>~42×26 cm; ~1.5 mm thick; ~48 g</dd>
+        <dt>Physical Properties</dt><dd>High thread count; iridescent bands; frayed edges; laminated flat metal threads</dd>
+        <dt>Estimated Age</dt><dd>~1,230–1,260 BP (contextual; RC pending)</dd>
+        <dt>Preservation State</dt><dd>Partial fragment; pigment partly degraded</dd>
+        <dt>Location Found</dt><dd>Funerary Cache FC-4 (adjacent to BP-12); 34.086N, −118.260W (fictional)</dd>
+        <dt>Likely Purpose</dt><dd>Funerary/ceremonial textile</dd>
+        <dt>Evidence of Use</dt><dd>Creases and fold lines; abrasion at wrap points; no tissue residues detected post-conservation</dd>
+        <dt>Manufacture Clues</dt><dd>Alternating warp density; sharp stenciled/resist pigment bands; metal threads laid on final weft pass</dd>
+        <dt>Found With</dt><dd>Crystalline sachet, mirror fragment, bead cluster</dd>
+        <dt>Burial or Habitat Context</dt><dd>Sealed cache adjacent to interment</dd>
+        <dt>Symbolism</dt><dd>Triadic linear band motifs (documented)</dd>
+        <dt>Comparison</dt><dd>Technique like RW-1, but RW-2 is more blue-rich</dd>
+      </dl>
+    </div>
+  </article>
+</section>
+
 <footer>
      <p>This is a fictitious website created purely for academic purposes.
      This site was conceived by a human. The content on this site was conceived 
@@ -32,6 +219,34 @@
      edited, reviewed, verified, validated, and augmented by a human, 
      although AI is a much better typist than I. </p>
     </footer>
+    <script>
+  function showSection(sectionId, btnEl) {
+    // hide all sections
+    document.querySelectorAll('.collection-section').forEach(s => s.style.display = 'none');
+    // show target
+    const target = document.getElementById(sectionId);
+    if (target) target.style.display = 'block';
+
+    // update button active state + aria
+    document.querySelectorAll('.subnav-btn').forEach(b => {
+      b.classList.remove('is-active');
+      b.setAttribute('aria-pressed', 'false');
+    });
+    if (btnEl) {
+      btnEl.classList.add('is-active');
+      btnEl.setAttribute('aria-pressed', 'true');
+    }
+
+    // optional: scroll to top of the section on mobile
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // default view on load
+  document.addEventListener('DOMContentLoaded', () => {
+    // ensure one is visible even if CSS/HTML changed
+    showSection('archeology', document.querySelector('.subnav-btn'));
+  });
+</script>
 
  </body>
 </html>

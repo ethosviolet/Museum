@@ -1,0 +1,18 @@
+Staff: I used AI to design all of the images and content 
+for the backstory of the staff and their involvement in the fictional
+project. The CSS was partially augmented by AI after I started to design it myself
+I then took back what AI put out and edited it to my own specifications in keeping
+with the style necessary to satisfy requirements.
+
+Collections: I took the prompt from the assignment and fed it to AI to get all
+of the content for the site. For the CSS and JS requirements in the project, AI read those
+requirements in the prompt and added them into what it put out along with the content. I made sure
+they fell in line with the styling by submitting my old CSS and AI spit out a new CSS style 
+page that had my old CSS and new CSS that matched the style and requirements that were set forth for
+this leg of the project. 
+
+I must say that in my opinion it is somewhat disenheartening that the 
+technology that I am up against possesses this kind of power and ability. It seems like it could
+help a senior developer automate and speed through these types of simple tasks. I am feeling like I
+need more speciailized knowledge in order to stand a chance of ever fitting into the workforce as
+a software engineer. 

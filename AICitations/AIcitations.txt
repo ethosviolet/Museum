@@ -11,6 +11,11 @@ they fell in line with the styling by submitting my old CSS and AI spit out a ne
 page that had my old CSS and new CSS that matched the style and requirements that were set forth for
 this leg of the project. 
 
+Shop: Here the AI client only generated images and content for the shop. I plugged it all in manually as 
+instructed. Most of the content the AI put out for the prompts given was great on the first run. 
+However there was one image that it spit out for the tote bag that I had to have 
+it reasses because the image was not very much like the description at all. 
+
 I must say that in my opinion it is somewhat disenheartening that the 
 technology that I am up against possesses this kind of power and ability. It seems like it could
 help a senior developer automate and speed through these types of simple tasks. I am feeling like I

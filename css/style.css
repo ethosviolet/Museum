@@ -168,6 +168,9 @@ h2 {
     border-bottom: 3px solid #41b9ff;
     padding-bottom: .5rem;
     letter-spacing: 1px;
+    font-family: 'Monoton', cursive;
+    text-shadow: 2px 2px 5px purple;
+
 }
 
 /* Artifact cards */

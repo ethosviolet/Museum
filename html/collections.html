@@ -19,7 +19,6 @@
         <li><a href="../html/staff.html">Staff</a></li>
     </ul>
 </header>
-
 <nav class="secondary-nav" aria-label="Collections sub-navigation">
   <button class="subnav-btn is-active"
           onclick="showSection('archeology', this)"
@@ -32,7 +31,9 @@
           aria-pressed="false">Anthropology</button>
 
   <button class="subnav-btn"
-          onclick="window.location.href='/html/histories.html'">Histories</button>
+          onclick="showSection('histories', this)"
+          aria-controls="histories"
+          aria-pressed="false">Histories</button>
 </nav>
 <!-- ===================== ARCHEOLOGY ===================== -->
 <section id="archeology" class="collection-section">
@@ -42,8 +43,8 @@
   <article class="artifact">
     <figure class="artifact-media">
       <img src="../images/collections/arch_prismatic_ledger_slab.png"
-           alt="Polished rectangular prismatic slab with shallow parallel grooves lying on terrace soil with bead fragments." loading="lazy">
-      <figcaption>Prismatic Ledger Slab</figcaption>
+           alt="Polished rectangular prismatic slab with shallow parallel grooves lying on terrace soil with bead fragments." loading="lazy" class="open-modal"  data-modal-target="#prismatic-ledger-slab">
+      <figcaption><p>Prismatic Ledger Slab</p><p>Click photo for more details</p></figcaption>
     </figure>
     <div class="artifact-meta">
       <h2 class="artifact-name">Prismatic Ledger Slab</h2>
@@ -65,13 +66,29 @@
       </dl>
     </div>
   </article>
+  <div class="modal-item" id="prismatic-ledger-slab" hidden>
+  <h2 id="modal-title">Prismatic Ledger Slab (A0-P17-L98) - Collection Note</h2>
+  <p>Cut from translucent silicate crystal and inlaid with copper-alloy filaments, 
+    this slab exemplifies the extraordinary care with which the Light Refractory 
+    people worked with luminous materials. Its shallow grooves, carved in repeating 
+    triplets, reveal a cultural preoccupation with rhythm and sequence—whether 
+    astronomical cycles, communal counts, or ceremonial recitations. 
+    The high polish inside the grooves and faint traces of mineralized organics suggest repeated handling, 
+    as though meaning was activated through touch as much as through sight. </p>
+    <p>Found at the Prism Terrace alongside beads, a textile remnant, and a copper pin, 
+      the slab belonged to a world where information was not confined to words but 
+      expressed through light, surface, and communal performance. We call it a “ledger,” 
+      but its role may have bridged record and ritual, inscription and reflection. </p>
+    <p>In respecting its ambiguity, we honor the possibility that knowledge here was luminous, rhythmic, and collective.</p>
+    <p class="italics"> — Dr. Senka Marrow, Lead Archaeologist</p>
+</div>
 
   <!-- Item 2: Resonance Mirror (fragment) -->
   <article class="artifact">
     <figure class="artifact-media">
       <img src="../images/collections/arch_resonance_mirror_fragment.png"
-           alt="Crescent-shaped iridescent mirror shard on compact earthen packing with a mineralized wooden frame piece nearby." loading="lazy">
-      <figcaption>Resonance Mirror (fragment, lower arc)</figcaption>
+           alt="Crescent-shaped iridescent mirror shard on compact earthen packing with a mineralized wooden frame piece nearby." loading="lazy" class="open-modal"  data-modal-target="#arch_resonance_mirror_fragment">
+      <figcaption><p>Resonance Mirror (fragment, lower arc)</p><p>Click photo for more details</p></figcaption>
     </figure>
     <div class="artifact-meta">
       <h2 class="artifact-name">Resonance Mirror (fragment, lower arc)</h2>
@@ -93,13 +110,28 @@
       </dl>
     </div>
   </article>
+  <div class="modal-item" id="arch_resonance_mirror_fragment" hidden>
+  <h2 id="modal-title">Resonance Mirror (fragment, lower arc) (AO-D14-L68) — Collection Note</h2>
+  <p>This shimmering fragment, once part of a large circular mirror nearly half a meter across, was 
+    crafted from metallic glass on a ceramic backing with an iridized oxide film. Excavated from a 
+    subterranean alcove, its surface still catches light with spectral hues, hinting at its role as 
+    more than a simple reflective device. The grooved rim and concentric abrasion marks suggest mounting and 
+    repeated use, yet the absence of soot implies it was protected from everyday smoke or fire. </p>
+    <p>Culturally, such mirrors may have been instruments of transition—used to mediate between dawn and dusk, 
+      or between mortal and ancestral realms. The arc form itself embodies passage and cycle. Found alongside 
+      stone weights and an inscribed ribbon, the mirror fragment appears embedded in both ritual display and symbolic record-keeping. </p>
+      <p>In this piece, light is not merely reflected—it is refracted into meaning, transforming a surface into a medium of cultural memory. </p>
+      <p class="italics"> — Dr. Senka Marrow, Lead Archaeologist</p>
+
+</div>
+
 
   <!-- Item 3: Seam-Spindle of the Spectral Loom -->
   <article class="artifact">
     <figure class="artifact-media">
       <img src="../images/collections/arch_seam_spindle.png"
-           alt="Dark cylindrical spindle with thin metal inlays and mineralized fiber fragments on a woven mat." loading="lazy">
-      <figcaption>Seam-Spindle of the Spectral Loom</figcaption>
+           alt="Dark cylindrical spindle with thin metal inlays and mineralized fiber fragments on a woven mat." loading="lazy" class="open-modal"  data-modal-target="#arch_seam_spindle">
+      <figcaption><p>Seam-Spindle of the Spectral Loom</p><p>Click photo for more details</p></figcaption>
     </figure>
     <div class="artifact-meta">
       <h2 class="artifact-name">Seam-Spindle of the Spectral Loom</h2>
@@ -121,6 +153,24 @@
       </dl>
     </div>
   </article>
+<div class="modal-item" id="arch_seam_spindle" hidden>
+  <h2 id="modal-title">Seam-Spindle of the Spectral Loom (AO-S79-F37)</h2>
+  <p>Recovered from the collapsed “Weaver’s Niche” at ARK-3, this spindle fragment 
+    reveals the interweaving of daily practice and cosmological vision. Its 
+    darkstone core, banded with a silver-like alloy inlay, shows careful workmanship: 
+    perforations at each end, axial scoring, and a midline polish worn smooth 
+    from rotational use. Mineralized fibers and flecks of pigment remain adhered, 
+    linking it unmistakably to the act of weaving. </p>
+  <p>Yet the alternating light and dark bands suggest meaning beyond craft. 
+    To the community that shaped it, duality—day and night, warp and weft, 
+    seen and unseen—may have been encoded into the very tools of production. 
+    Found alongside loom weights, fiber bundles, and a small pigment pot, 
+    this spindle may have served as both instrument and emblem: a device for weaving 
+    cloth, but also for weaving balance into social and spiritual life. </p>
+    <p>Through this object, we glimpse a worldview in which the practical 
+      and the symbolic were never separate threads. </p>
+    <p class="italics"> — Dr. Senka Marrow, Lead Archaeologist</p>
+</div>
 </section>
 
 <!-- ===================== ANTHROPOLOGY ===================== -->
@@ -131,8 +181,8 @@
   <article class="artifact">
     <figure class="artifact-media">
       <img src="../images/collections/anthro_partial_spectral_burial_b12.png"
-           alt="Partially exposed cranial vault with thoracic bone fragments, mineralized textile, and a small bead cluster." loading="lazy">
-      <figcaption>Partial Spectral Burial: Adult (B-12)</figcaption>
+           alt="Partially exposed cranial vault with thoracic bone fragments, mineralized textile, and a small bead cluster." loading="lazy" class="open-modal"  data-modal-target="#anthro_partial_spectral_burial_b12">
+      <figcaption><p>Partial Spectral Burial: Adult (B-12)</p><p>Click photo for more details</p></figcaption>
     </figure>
     <div class="artifact-meta">
       <h2 class="artifact-name">Partial Spectral Burial: Adult (Specimen B-12)</h2>
@@ -154,13 +204,25 @@
       </dl>
     </div>
   </article>
+  <div class="modal-item" id="anthro_partial_spectral_burial_b12" hidden>
+  <h2 id="modal-title">Partial Spectral Burial (B-12) (AP-K75-Y39) — Collection Note</h2>
+  <p>When I stand before Burial B-12, I do not see “remains” alone, I see relationships persisting across time.
+     Here, fragments of a skull and thoracic bones lie in quiet company with mineralized textiles and a cluster of beads. 
+     These materials remind us that death was not the severing of ties but their continuation.</p>
+     <p> The beads near the chest may once have formed a necklace or sewn adornment, 
+      tokens of recognition in the passage to the ancestral realm. The preserved cloth fibers, 
+      though mineralized, speak of patterned skill — of hands weaving meaning into fabric.</p>
+  <p>This burial tells us that memory was tactile, luminous, and communal. 
+    We are asked to look past the bones and glimpse the gestures of care that enfolded a life.</p>
+    <p class="italics"> — Professor Orien Thal, Cultural Anthropologist</p>
+</div>
 
   <!-- Item 5: Infant Assemblage (I-3) -->
   <article class="artifact">
     <figure class="artifact-media">
       <img src="../images/collections/anthro_infant_ossicle_tray_i3.png"
-           alt="Wooden tray holding infant bone fragments, shell disks, carved bone pendant, and folded pigment-stained textile." loading="lazy">
-      <figcaption>Infant Assemblage: Ossicle Tray + Adornments (I-3)</figcaption>
+           alt="Wooden tray holding infant bone fragments, shell disks, carved bone pendant, and folded pigment-stained textile." loading="lazy" class="open-modal"  data-modal-target="#anthro_infant_ossicle_tray_i3">
+      <figcaption><p>Infant Assemblage: Ossicle Tray + Adornments (I-3)</p><p>Click photo for more details</p></figcaption>
     </figure>
     <div class="artifact-meta">
       <h2 class="artifact-name">Infant Assemblage: Ossicle Tray + Adornments (Specimen I-3)</h2>
@@ -182,13 +244,26 @@
       </dl>
     </div>
   </article>
+  <div class="modal-item" id="anthro_infant_ossicle_tray_i3" hidden>
+  <h2 id="modal-title">Infant Assemblage (I-3) (AP-L93-F47) — Collection Note</h2>
+  <p>The Infant Assemblage, catalogued as I-3, offers a moving testament to love and loss. 
+    Here, the fragile bones of a child rest with shell disks, a carved pendant, 
+    and a folded textile stained with pigment. These are not random inclusions but a constellation of meaning. 
+    The shells shimmer like tears, luminous tokens for a soul’s journey. The pendant, carved with care, 
+    suggests both protection and commemoration. The folded textile, deliberately creased, enfolded memory as much as it did the child.</p>
+  <p>This assemblage reminds us that even the briefest of lives were honored through ritual. Communities wove grief into matter, 
+    transforming mourning into lasting remembrance.</p> 
+  <p>For me, this context is a profound reminder of continuity: 
+    of how societies have always met loss with gestures of tenderness.</p>
+  <p class="italics"> — Professor Orien Thal, Cultural Anthropologist</p>
+</div>
 
   <!-- Item 6: Ceremonial Body Wrap Fragment (RW-2) -->
   <article class="artifact">
     <figure class="artifact-media">
       <img src="../images/collections/anthro_ceremonial_wrap_rw2.png"
-           alt="Close-up of finely woven textile fragment with narrow iridescent pigment bands and flat metal-thread inlays." loading="lazy">
-      <figcaption>Ceremonial Body Wrap Fragment with Photoglyphic Bands (RW-2)</figcaption>
+           alt="Close-up of finely woven textile fragment with narrow iridescent pigment bands and flat metal-thread inlays." loading="lazy" class="open-modal"  data-modal-target="#anthro-ceremonial-wrap">
+      <figcaption><p>Ceremonial Body Wrap Fragment with Photoglyphic Bands (RW-2)</p><p>Click photo for more details</p></figcaption>
     </figure>
     <div class="artifact-meta">
       <h2 class="artifact-name">Ceremonial Body Wrap Fragment with Photoglyphic Bands (Specimen RW-2)</h2>
@@ -210,7 +285,195 @@
       </dl>
     </div>
   </article>
+  <div class="modal-item" id="anthro-ceremonial-wrap" hidden>
+  <h2 id="modal-title">Ceremonial Body Wrap Fragment (RW-2) (AP-F38-H56) — Collection Note</h2>
+  <p>This textile fragment, RW-2, carries the shimmer of ceremony. Iridescent pigment bands and 
+    fine metallic threads are woven into its structure, creating not only fabric but language. 
+    Textiles such as these were more than garments — they were inscriptions of identity and cosmology, 
+    enfolding the wearer in symbolic order.</p>
+  <p>Found in funerary association, this fragment likely once wrapped a body, its shimmer catching and refracting light in the passage between worlds. 
+    To weave such cloth was to weave meaning, connecting warp and weft to cycles of life and death. In its incomplete but radiant form, 
+    the fragment speaks of textiles as enduring vessels of story and memory.</p>
+  <p>When I reflect on RW-2, I see not a fragment but a thread still binding us to the 
+    people who made and wore it.</p>
+    <p class="italics"> — Professor Orien Thal, Cultural Anthropologist</p>
+  </div>
 </section>
+<section id="histories" class="collection-section" style="display: none;">
+  <h1 class="section-title">Histories</h1>
+<article class="histories">
+    <figure class="histories-media">
+      <img src="../images/collections/arch_prismatic_ledger_slab.png"
+           alt="Polished rectangular prismatic slab with shallow parallel grooves lying on terrace soil with bead fragments." loading="lazy">
+      <figcaption>Prismatic Ledger Slab</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Prismatic Ledger Slab</h2>
+    <dl>
+        <dt>Artifact ID:</dt><dd>AO-P17-L98</dd>
+        <dt>Title:</dt><dd>Prismatic Ledger Slab</dd>
+        <dt>Culture:</dt><dd>Prism Terrace Community (fictionalized, late ritual-habitation complex)</dd>
+        <dt>Estimated Age:</dt><dd>1,200–1,450 BP (contextual; charcoal assay pending)</dd>
+        <dt>Material:</dt><dd>Translucent silicate crystal with embedded copper-alloy filaments</dd>
+        <dt>Origin:</dt><dd>ARK-7 “Prism Terrace” L4; 34.092N, −118.254W</dd>
+     </dl> 
+  <h2>What the Experts Believe</h2>
+  <p>This rectangular slab of translucent silicate crystal, measuring 62 by 28 centimeters and weighing just over six kilograms, is among the most technically refined artifacts recovered from the site designated ARK-7 “Prism Terrace.” The piece is cut and ground from a natural crystal outcrop, its surface polished to a planar finish. Three features stand out to the careful observer: narrow laminar banding in the crystal, faint copper-alloy filaments embedded within, and shallow grooves incised in parallel triplets across the surface. </p>
+  <p>Close examination reveals micro-abrasion along the grooves and a high polish within them, suggesting intentional, repeated contact—possibly the movement of tools, markers, or hands across the slab. Faint traces of mineralized organics indicate it may have been used in conjunction with other materials, though their precise nature remains uncertain. Its physical setting was a habitation terrace, where it was found in association with glassy bead clusters, a carbonized textile fragment, and a copper pin. Together, these objects suggest that the slab was integrated into practices of adornment, memory, and display. </p>
+  <p>We interpret this piece as a “ledger slab”: a surface designed to record or transmit knowledge. The triplet groove motif may have represented cycles—celestial, seasonal, or communal—in ways that merged practical record-keeping with ritualized performance. The copper filaments, deliberately sealed beneath the polish, refract light faintly. This interplay of natural crystal properties and human intervention hints at a symbolic desire to unify natural growth with social order.</p>
+  <h2>Comparative Note</h2>
+  <p>Yet uncertainty is essential to our understanding. What we call “ledger” may have been, for its makers, more than a tool: a luminous stage upon which knowledge was enacted, remembered, or renewed in community. Such ambiguity resists narrow classification and reminds us that information in ancient societies was not confined to writing alone. It could be inscribed in crystal, woven into textile, or carried in ritual gesture. </p>
+  <h2>Cautionary Note on Interpretation</h2>
+  <p>As an archaeologist, I am mindful of how interpretations risk reducing complexity to utility. My work is guided by cultural semiotics, reading the object as symbol as well as artifact, and by a decolonial commitment to avoid flattening indigenous epistemologies. This slab is a record, a reflector, and a reminder—that memory itself can be luminous. </p>
+  <h2>On Display Courtesy of</h2>
+  <p style="text-align: center;">The Helix Foundation for Material Memory</p>
+</div>
+</article>
+<article class="histories">
+    <figure class="histories-media">
+      <img src="../images/collections/arch_resonance_mirror_fragment.png"
+           alt="Crescent-shaped iridescent mirror shard on compact earthen packing with a mineralized wooden frame piece nearby." loading="lazy">
+      <figcaption>Resonance Mirror (fragment, lower arc)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Resonance Mirror (fragment, lower arc)</h2>
+    <dl>
+        <dt>Artifact ID:</dt><dd>AO-D14-L68</dd>
+        <dt>Title:</dt><dd>Resonance Mirror (Fragment, Lower Arc)</dd>
+        <dt>Culture:</dt><dd>Low-Light Annex Assemblage</dd>
+        <dt>Estimated Age:</dt><dd>~1,100–1,300 BP (thermoluminescence context)</dd>
+        <dt>Material:</dt><dd>Metallic glass veneer on ceramic composite backing; iridized oxide film</dd>
+        <dt>Origin:</dt><dd>Chamber C, “Low-Light Annex”; 34.089N, −118.258W</dd>
+     </dl> 
+  <h2>What the Experts Believe</h2>
+  <p>This polished arc once formed part of a circular mirror over half a meter wide. Crafted with metallic glass veneer fused to a ceramic composite base, its surface still displays shifting iridescent hues. Unlike common domestic mirrors, this fragment bears organic adhesive traces and a rim notch motif, suggesting careful mounting within a larger frame. Concentric abrasion patterns on its surface indicate repeated use, while its soot-free state implies it was preserved in a protected or ritual setting. </p>
+  <p>The mirror was recovered from the “Low-Light Annex”, a subterranean chamber where light was scarce and carefully managed. Its reflective and refractive qualities, coupled with its discovery alongside stone weights, a mineralized frame, and an inscribed textile ribbon, suggest that this object served as more than a tool of self-regard. It may have functioned as a ritual mediator of light—capturing, dispersing, or redirecting illumination during ceremonies. </p>
+  <p>From a cultural semiotic perspective, the arc form itself holds symbolic weight, representing cycles of dawn and dusk, or transitions between mortal and ancestral realms. The craftsmanship—thin veneer, pressed fiber ceramic, resin adhesives—demonstrates deliberate technological control, embedding natural brilliance into a cultural artifact of meaning. </p>
+  <h2>Comparative Note</h2>
+  <p>In working with such pieces, I am reminded of moments when textile patterns once dismissed as “mere decoration” revealed calendrical significance through dialogue with Indigenous storywork. This mirror fragment may similarly encode layered functions—practical, symbolic, and cosmological. As interpreters, our responsibility is to keep these possibilities open, acknowledging both scholarly insight and the perspectives of descendant communities for whom such objects may remain sacred.</p>
+  <h2>Cautionary Note on Interpretation</h2>
+  <p>Yet the fragment also resists certainty. Was it a ceremonial focal point, a cosmological register, or an instrument of ancestral communion? Each interpretation reminds us that meaning in material culture emerges at the intersection of material, context, and community memory.</p>
+  <h2>On Display Courtesy of</h2>
+  <p style="text-align: center;">The Low-Light Institute for Optical Heritage</p>
+  </div>
+  </article>
+  <article class="histories">
+    <figure class="histories-media">
+      <img src="../images/collections/arch_seam_spindle.png"
+           alt="Dark cylindrical spindle with thin metal inlays and mineralized fiber fragments on a woven mat." loading="lazy">
+      <figcaption>Seam-Spindle of the Spectral Loom</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Seam-Spindle of the Spectral Loom</h2>
+    <dl>
+        <dt>Artifact ID:</dt><dd>AO-S79-F37</dd>
+        <dt>Title:</dt><dd>Seam-Spindle of the Spectral Loom</dd>
+        <dt>Culture:</dt><dd>Weaver’s Niche Tradition</dd>
+        <dt>Estimated Age:</dt><dd>~900–1,100 BP (sealed beam cavity)</dd>
+        <dt>Material:</dt><dd>Darkstone core with silver-like alloy inlay; mineralized fiber twine</dd>
+        <dt>Origin:</dt><dd>ARK-3 “Weaver’s Niche”; 34.091N, −118.255W</dd>
+     </dl> 
+  <h2>What the Experts Believe</h2>
+  <p>This spindle, recovered from the collapsed “Weaver’s Niche” at site ARK-3, offers insight into both daily practice and symbolic order. Measuring 27 cm in length, the artifact consists of a matte darkstone core with carefully hammered silver-like alloy inlay bands. Its form shows technical precision: drilled perforations at the ends, axial scoring along the body, and lathe-like turning. The spindle bears traces of use—rotational abrasion at its tips, midline polish from repeated handling, and pigment flecks adhered to mineralized fibers—confirming its role in textile work.  </p>
+  <p>As a weaving tool, the spindle was practical, used to twist and tension fibers. Yet its alternating light and dark bands invite further interpretation. The contrast may have symbolized cycles of balance: day and night, warp and weft, the visible and the unseen. Found alongside loom weights, fiber bundles, and a pigment pot, the spindle may have anchored weaving not only as a household craft but as a cosmological act. Textiles themselves often served as carriers of meaning—encoding narratives, calendrical rhythms, and identity in color and pattern. The inlayed spindle, then, may have embodied the principle that weaving creates not only cloth but social cohesion and cosmic order. </p>
+  <p>Its manufacture demonstrates a blending of skill and intention. The inlay was inserted into pre-carved channels and sealed with hammering, suggesting that its makers valued both durability and aesthetic contrast. Unlike other spindles from the same context, the presence of metallic inlay marks this object as exceptional, perhaps reserved for ritual weaving or as the property of a master weaver. </p>
+  <h2>Comparative Note</h2>
+  <p>Working with textile fragments across sites, I have learned that what once seemed ornamental often encoded entire systems of knowledge. This spindle challenges us to see weaving not only as domestic labor but as a means of world-making—binding together memory, rhythm, and relation. It stands as both artifact and metaphor: a seam that joins craft to cosmos.</p>
+  <h2>Cautionary Note on Interpretation</h2>
+  <p>Interpretively, this artifact reminds us that tools are never only tools. Their forms and embellishments carry values and metaphors, weaving cultural meaning into physical function. Just as threads intertwine, so too do the practical and the symbolic. </p>
+  <h2>On Display Courtesy of</h2>
+  <p style="text-align: center;">Loomwrights’ Guild Archive (International Chapter)</p>
+  </div>
+  </article>
+  <article class="histories">
+    <figure class="histories-media">
+      <img src="../images/collections/anthro_partial_spectral_burial_b12.png"
+           alt="Partially exposed cranial vault with thoracic bone fragments, mineralized textile, and a small bead cluster." loading="lazy">
+      <figcaption>Partial Spectral Burial: Adult (B-12)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Partial Spectral Burial: Adult (Specimen B-12)</h2>
+      <dl>
+        <dt>Artifact ID:</dt><dd>AP-K75-Y39</dd>
+        <dt>Title:</dt><dd>Partial Spectral Burial: Adult (Specimen B-12)</dd>
+        <dt>Culture:</dt><dd>Terrace Burial Group (fictionalized)</dd>
+        <dt>Estimated Age:</dt><dd>~1,200 BP (contextual, pending further stratigraphic confirmation)</dd>
+        <dt>Material:</dt><dd>Human skeletal remains with associated mineralized textiles and bead cluster</dd>
+        <dt>Origin:</dt><dd>Excavation locus, terrace-edge feature</dd>
+     </dl> 
+  <h2>What the Experts Believe</h2>
+  <p>The interment identified as B-12, or the Partial Spectral Burial, preserves skeletal remains surrounded by mineral inclusions that shimmer even in dim light. Soil analysis revealed flakes of mica-like material and pigment residues deliberately pressed into bone surfaces and sediment layers. Such choices suggest an intentional orchestration of brilliance. The luminous effect, fragile but persistent, implies a cultural logic in which burial was not simply the concealment of a body but a continuation into altered states of visibility.</p>
+  <p>The layering of pigment into bone fissures further signals that color was not decorative but ontological—an element of being that could be carried forward. If the inclusions were meant to refract or glow, they may have conjured a spectral presence, affirming that the dead retained agency within communal life. The body thus became a site of transformation, its radiance echoing dawn, dusk, or celestial movements that framed human mortality within broader cycles.</p>
+  <p>Placed within a terrace chamber, the burial context implies shared viewing. Rather than isolating the deceased, the shimmering burial may have functioned as a focal point for gatherings, where light’s play across the pigments enacted remembrance and continuity. It is equally possible that such burials marked lineage, with refractive substances binding the dead to an enduring cosmological order. </p>
+  <h2>Comparative Note</h2>
+  <p>Comparable use of reflective media appears in Appalachian mica burials and Mesoamerican obsidian offerings, where luminosity mediated contact with ancestors.</p>
+  <h2>Cautionary Note on Interpretation</h2>
+  <p>We must avoid assuming that “light” held universal transcendental value; for this society it may have symbolized cycles, kinship, or other meanings we cannot fully reconstruct. </p>
+  <h2>On Display Courtesy of</h2>
+  <p style="text-align: center;">The Ancestral Strata Trust</p>
+  </div>
+  </article>
+  <article class="histories">
+    <figure class="histories-media">
+      <img src="../images/collections/anthro_infant_ossicle_tray_i3.png"
+           alt="Wooden tray holding infant bone fragments, shell disks, carved bone pendant, and folded pigment-stained textile." loading="lazy">
+      <figcaption>Infant Assemblage: Ossicle Tray + Adornments (I-3)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Infant Assemblage: Ossicle Tray + Adornments (Specimen I-3)</h2>
+       <dl>
+        <dt>Artifact ID:</dt><dd>AP-L93-F47</dd>
+        <dt>Title:</dt><dd>Infant Assemblage: Ossicle Tray + Adornments (Specimen I-3)</dd>
+        <dt>Culture:</dt><dd>Early Terrace Domestic-Funerary Context (fictionalized)</dd>
+        <dt>Estimated Age:</dt><dd>~1,100 BP (associated with pigment-treated textiles)</dd>
+        <dt>Material:</dt><dd>Infant remains with shell disks, carved pendant, and folded textile fragment</dd>
+        <dt>Origin:</dt><dd>Infant remains with shell disks, carved pendant, and folded textile fragment</dd>
+     </dl> 
+  <h2>What the Experts Believe</h2>
+  <p>The Infant Assemblage I-3 is among the most poignant yet instructive finds. The burial contained the remains of a very young child, accompanied by glassy beads, charred textile fragments, and a modest copper-alloy pin. The beads, though tiny, show surface wear, indicating that they circulated before their final deposition. This suggests they were heirlooms or tokens of ancestral continuity rather than new adornments. Their presence at the child’s side signals not wealth but belonging—the infant was enfolded into generational exchange despite their brief life.</p>
+  <p>The carbonized textile fragments, delicate yet patterned, hint at wrapping or swaddling. To wrap was to hold, to protect, and to frame the body within fibers imbued with symbolic resonance. The copper pin, simple but deliberate, recalls broader traditions of fastening and binding cloth. Here, it may have symbolized kinship bonds rather than functional fastening, a way of securing the child into collective identity.</p>
+  <p>These objects together reveal a practice in which infants were not marginal but honored. The burial’s care demonstrates that even the youngest were inscribed into cycles of memory. By accompanying the child with tokens of continuity, the community may have asserted that life, however brief, remained woven into cosmology.</p>
+  <h2>Comparative Note</h2>
+  <p>Infant burials across Europe and the Andes often include small heirlooms, indicating communal belonging over individual possession.</p>
+  <h2>Cautionary Note on Interpretation</h2>
+  <p>Contemporary readers may emphasize “loss,” but these practices might have marked renewal or the child’s integration into ancestral return.</p>
+  <h2>On Display Courtesy of</h2>
+  <p style="text-align: center;">The Ancestral Strata Trust</p>
+  </div>
+  </article>
+  <article class="histories">
+    <figure class="histories-media">
+      <img src="../images/collections/anthro_ceremonial_wrap_rw2.png"
+           alt="Close-up of finely woven textile fragment with narrow iridescent pigment bands and flat metal-thread inlays." loading="lazy">
+      <figcaption>Ceremonial Body Wrap Fragment with Photoglyphic Bands (RW-2)</figcaption>
+    </figure>
+    <div class="artifact-meta">
+      <h2 class="artifact-name">Ceremonial Body Wrap Fragment with Photoglyphic Bands (Specimen RW-2)</h2>
+      <dl>
+        <dt>Artifact ID:</dt><dd>AP-F38-H56</dd>
+        <dt>Title:</dt><dd>Ceremonial Body Wrap Fragment with Photoglyphic Bands (Specimen RW-2)</dd>
+        <dt>Culture:</dt><dd>Ritual Weaving Tradition</dd>
+        <dt>Estimated Age:</dt><dd>~1,150 BP (based on associated burial context)</dd>
+        <dt>Material:</dt><dd>Pigmented textile fragment with metallic-thread inlay</dd>
+        <dt>Origin:</dt><dd>Funerary deposit, ritual wrap context</dd>
+     </dl> 
+  <h2>What the Experts Believe</h2>
+  <p>The textile fragment RW-2 is a rare survival of ceremonial fabric. Measuring only a portion of its original scale, the fragment nonetheless reveals remarkable sophistication. Its warp-and-weft structure is interlaced with pigment bands and fine inlaid metal threads, still glimmering faintly despite centuries of burial. The pigments shift under angled light, producing an iridescent quality that would have animated the surface in ritual contexts.</p>
+  <p>Evidence suggests the textile once formed part of a full body wrap. Such wrappings were not utilitarian coverings but ritual mediators, enfolding the individual in luminous symbols that bridged earthly and ancestral domains. The play of light across pigment and metal thread would have transformed the body into a radiant presence, visible to mourners and, perhaps, to deities. Textiles of this scale and craft carried weight equal to monuments, functioning as portable cosmologies in which stories, calendars, and genealogies were embedded.</p>
+  <p>Found within a collapsed domestic space repurposed for ceremonial use, the fragment testifies both to technical mastery and cultural priorities. It reminds us that textiles were among the most sophisticated symbolic media of their time, capable of encoding order, memory, and transition.</p>
+  <h2>Comparative Note</h2>
+  <p>Comparable luminous wrappings appear in Paracas funerary textiles and Mediterranean ritual cloths, where light animated cosmological meaning.</p>
+  <h2>Cautionary Note on Interpretation</h2>
+  <p>We must resist reading this textile merely as ornamentation; its motifs may have been narrative, calendrical, or genealogical in function.</p>
+  <h2>On Display Courtesy of</h2>
+  <p style="text-align: center;">The Society for Ritual Weaving and Pattern Studies</p>
+  </div>
+  </article>
+<ul class="nav-menu"><li><a href="../html/collections.html">Back to Collections</a></li></ul>
+</section>
+
+
+
 
 <footer>
      <p>This is a fictitious website created purely for academic purposes.
@@ -219,34 +482,12 @@
      edited, reviewed, verified, validated, and augmented by a human, 
      although AI is a much better typist than I. </p>
     </footer>
-    <script>
-  function showSection(sectionId, btnEl) {
-    // hide all sections
-    document.querySelectorAll('.collection-section').forEach(s => s.style.display = 'none');
-    // show target
-    const target = document.getElementById(sectionId);
-    if (target) target.style.display = 'block';
-
-    // update button active state + aria
-    document.querySelectorAll('.subnav-btn').forEach(b => {
-      b.classList.remove('is-active');
-      b.setAttribute('aria-pressed', 'false');
-    });
-    if (btnEl) {
-      btnEl.classList.add('is-active');
-      btnEl.setAttribute('aria-pressed', 'true');
-    }
-
-    // optional: scroll to top of the section on mobile
-    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  // default view on load
-  document.addEventListener('DOMContentLoaded', () => {
-    // ensure one is visible even if CSS/HTML changed
-    showSection('archeology', document.querySelector('.subnav-btn'));
-  });
-</script>
-
+    <div class="modal" id="modal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-content">
+    <button class="close-modal" aria-label="Close">x</button>
+    <div id="modal-body"></div> 
+  </div>
+</div>
+<script type="application/javascript" src="../js/collections.js"></script>  
  </body>
 </html>

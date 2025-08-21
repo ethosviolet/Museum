@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta name="author" content="Jacob Hobzek">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Monoton&display=swap" rel="stylesheet">
-   <meta name="robots" content="noindex, nofollow">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Monoton&display=swap" rel="stylesheet">
    <link href="../css/style.css" rel="stylesheet" type="text/css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -13,8 +12,13 @@
 <body>
   <header>
     <h1>Souvenir Shop</h1>
-  </header>
-
+    <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/html/staff.html">Staff</a></li>
+        <li><a href="/html/collections.html">Collections</a></li>
+        <li><a href="/html/cart.html">View cart</a></li>
+    </ul>
+</header>
   <div class="shop-container">
 
     <div class="souvenir-item" data-id="item001">
@@ -22,35 +26,75 @@
       <h3>Miniature Prism Ledger Replica</h3>
       <p>A palm-sized, resin-cast replica of the famed Prismatic Ledger Slab, complete with engraved groove patterns and embedded metallic threads that shimmer under sunlight.</p>
       <p><strong>Price:</strong> $24.99</p>
-      <button onclick="addToCart('item001')">Add Miniature Prism Ledger Replica to Cart</button>
+      <div class="qty-badge" aria-live="polite"></div>
+      <button
+  onclick="addToCart(this)"
+  data-id="item001"
+  data-name="Mini-Prism-Ledger-Replica"
+  data-price="24.99"
+  data-image="../images/souvenir-shop/Mini-Prism-Ledger-Replica.png">
+  Add Miniature Prism Ledger Replica to cart
+      </button>
     </div>
     <div class="souvenir-item" data-id="item002">
       <img src="../images/souvenir-shop/Spectral-House-Pins.png" alt="Set of pins with colorful stylized Aurivian homes" title="Tiny houses that shimmer like secrets at dusk, each pin a doorway to worlds just out of sight.Tiny houses that shimmer like secrets at dusk, each pin a doorway to worlds just out of sight." onclick="openModal(this)" />
       <h3>Spectral House Pins (Set of 7)</h3>
       <p>Enamel pins representing the crests and colors of the Seven Spectral Houses—perfect for lanyards, bags, or jackets.</p>
       <p><strong>Price:</strong> $18.99/set</p>
-      <button onclick="addToCart('item002')">Add Spectral House Pins (Set of 7) to Cart</button>
+      <div class="qty-badge" aria-live="polite"></div>
+      <button
+  onclick="addToCart(this)"
+  data-id="item002"
+  data-name="Spectral-House-Pins"
+  data-price="18.99"
+  data-image="../images/souvenir-shop/Spectral-House-Pins.png">
+  Add Spectral House Pins (Set of 7) to Cart
+      </button>
     </div>
     <div class="souvenir-item" data-id="item003">
       <img src="../images/souvenir-shop/AurivianLanguageDecoderWheel.png" alt="A soouvenir decoder wheel with Aurivian symbols and English letters." title="A cipher turned talisman, as if the lines and symbols might rearrange themselves when held to the right light." onclick="openModal(this)" />
       <h3>Aurivian Language Decoder Wheel</h3>
       <p>A cardboard and acetate “decoder” that teaches visitors how to translate basic Aurivian photoglyphs into modern language.</p>
       <p><strong>Price:</strong> $9.99</p>
-      <button onclick="addToCart('item003')">Add Aurivian Language Decoder Wheel to Cart</button>
+      <div class="qty-badge" aria-live="polite"></div>
+      <button
+  onclick="addToCart(this)"
+  data-id="item003"
+  data-name="AurivianLanguageDecoderWheel"
+  data-price="9.99"
+  data-image="../images/souvenir-shop/AurivianLanguageDecoderWheel.png">
+  Add Aurivian Language Decoder Wheel to Cart
+      </button>
     </div>
     <div class="souvenir-item" data-id="item004">
       <img src="../images/souvenir-shop/LightRefractoryToteBag.png" alt="A tote bag with a picture of a crystal terraces" title="A canvas of sunset stone and rainbow handles, carrying not just belongings but a horizon folded in your hand." onclick="openModal(this)" />
       <h3>Light Refractory Tote Bag</h3>
       <p>Durable canvas tote featuring a stylized silhouette of the Crystal Terraces at sunset, with rainbow gradient handles.</p>
       <p><strong>Price:</strong> $14.99</p>
-      <button onclick="addToCart('item004')">Add Light Refractory Tote Bag to Cart</button>
+      <div class="qty-badge" aria-live="polite"></div>
+      <button
+  onclick="addToCart(this)"
+  data-id="item004"
+  data-name="LightRefractoryToteBag"
+  data-price="14.99"
+  data-image="../images/souvenir-shop/LightRefractoryToteBag.png">
+  Add Light Refractory Tote Bag to Cart
+      </button>
     </div>
     <div class="souvenir-item" data-id="item005">
       <img src="../images/souvenir-shop/GlowPrismKeychain.png" alt="A rainbow prism on a keychain the the words 'glow prism' esncribed on it." title="A pocket prism that bends light into color, a tiny guardian of keys and kaleidoscopic wonder." onclick="openModal(this)" />
       <h3>Glow Prism Keychain</h3>
       <p>Acrylic prism charm on a keyring, filled with iridescent glitter fluid that shifts as you move.</p>
       <p><strong>Price:</strong> $7.99</p>
-      <button onclick="addToCart('item005')">Add Glow Prism Keychain to Cart</button>
+      <div class="qty-badge" aria-live="polite"></div>
+      <button
+  onclick="addToCart(this)"
+  data-id="item005"
+  data-name="GlowPrismKeychain"
+  data-price="7.99"
+  data-image="../images/souvenir-shop/GlowPrismKeychain.png">
+  Add Glow Prism Keychain to Cart
+      </button>
     </div>
    
 
@@ -65,11 +109,51 @@
   </div>
 
   <script>
-    function addToCart(itemId) {
-      alert("Added " + itemId + " to cart (functionality to come)");
-      // Future: Push to cart array
+   //this key links the shop to the cart
+
+    const CART_KEY = 'museumCartV1';
+    
+
+// This function reads the Cart information and write it to JSON  
+    function readCart() {
+      try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; }
+      catch { return []; }
     }
 
+    function writeCart(cart) {
+      localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    }
+ 
+/*This function is called by the addToCart button the first part reads the dataset contined in the buttons and asssigns the values to variables */
+
+    function addToCart(btn) {
+      const id = btn.dataset.id;
+      const name = btn.dataset.name;
+      const unitPrice = Number(btn.dataset.price);
+      const image = btn.dataset.image;
+
+/* This part puts all of the individual items and puts them into an object called cart and writes it to LocalStorage   */
+
+      let cart = readCart();
+      const idx = cart.findIndex(it => it.id === id);
+      if (idx >= 0) {
+        cart[idx].qty += 1;
+      } else {
+        cart.push({ id, name, unitPrice, qty: 1, image });
+      }
+      writeCart(cart);
+
+      // Update the item card's qty badge
+
+      const card = btn.closest('.souvenir-item');
+      if (card) {
+        const badge = card.querySelector('.qty-badge');
+        if (badge) {
+          const item = cart.find(it => it.id === id);
+          badge.textContent = item ? `Qty: ${item.qty}` : '';
+        }
+      }
+    }
     function openModal(imgElement) {
       const modal = document.getElementById("modal");
       const modalImage = document.getElementById("modal-image");
